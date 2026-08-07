@@ -60,9 +60,9 @@ Yuk join community biar kita bisa saling share & belajar bareng!
 ### 📊 GitHub Stats
 
 <div align="center">
-  <!-- Updated to use official readme-stats endpoint -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Denisyoya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Denisyoya&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="170" alt="Top Languages" />
+  <!-- Added icon_color and cache_seconds to help icon visibility and reduce rate issues -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Denisyoya&show_icons=true&icon_color=58A6FF&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Denisyoya&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=86400" height="170" alt="Top Languages" />
 </div>
 
 <br>
