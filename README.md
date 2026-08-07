@@ -60,14 +60,14 @@ Yuk join community biar kita bisa saling share & belajar bareng!
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Denisyoya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub Stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Denisyoya&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Denisyoya&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&cache_seconds=1800" height="170" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Denisyoya&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=1800" height="170" alt="Top Languages"/>
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Denisyoya&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=Denisyoya&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
 </div>
 
 <br>
@@ -87,16 +87,6 @@ Yuk join community biar kita bisa saling share & belajar bareng!
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Denisyoya/Denisyoya/output/github-contribution-grid-snake.svg">
   </picture>
 </div>
-
----
-
-### 🚀 Proyek Unggulan
-
-| Proyek | Deskripsi | Tech |
-|--------|-----------|------|
-| **[Unknown](https://github.com/Denisyoya/repo1)** | Deskripsi singkat project ini | Unknown |
-| **[Unknown](https://github.com/Denisyoya/repo2)** | Deskripsi singkat project ini | Unknown |
-| **[Unknown](https://github.com/Denisyoya/repo3)** | Script SA-MP / gamemode | Unknown |
 
 ---
 
