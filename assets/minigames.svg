@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" width="100%" height="270">
+  <defs>
+    <style>
+      @keyframes bulletFire {
+        0%, 20% { opacity: 0; transform: translateX(0); }
+        25% { opacity: 1; transform: translateX(25px); }
+        35%, 100% { opacity: 0; transform: translateX(50px); }
+      }
+      @keyframes slashArc {
+        0%, 40% { opacity: 0; transform: rotate(-30deg) scale(0.8); }
+        45% { opacity: 1; transform: rotate(15deg) scale(1.1); }
+        55%, 100% { opacity: 0; transform: rotate(45deg) scale(0.9); }
+      }
+      @keyframes snakeStep {
+        0%, 15% { transform: translate(0, 0); }
+        20%, 35% { transform: translate(15px, 0); }
+        40%, 55% { transform: translate(30px, 0); }
+        60%, 75% { transform: translate(30px, 15px); }
+        80%, 100% { transform: translate(45px, 15px); }
+      }
+      @keyframes hpDrain {
+        0%, 20% { width: 130px; }
+        40%, 70% { width: 75px; }
+        80%, 100% { width: 130px; }
+      }
+      @keyframes muzzleFlash {
+        0%, 20% { opacity: 0; }
+        22%, 28% { opacity: 1; }
+        30%, 100% { opacity: 0; }
+      }
+      @keyframes pulseBorder {
+        0%, 100% { stroke: #30363D; }
+        50% { stroke: #58A6FF; }
+      }
+      .card-bg { fill: #0D1117; stroke: #30363D; stroke-width: 1.5; rx: 8; animation: pulseBorder 6s infinite; }
+      .header-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #58A6FF; letter-spacing: 0.5px; }
+      .sub-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 11px; fill: #8B949E; }
+      .mono-text { font-family: 'Fira Code', 'Courier New', monospace; font-size: 11px; fill: #79C0FF; }
+      .hp-bg { fill: #21262D; rx: 3; }
+      .hp-fill { fill: #238636; rx: 3; animation: hpDrain 5s infinite; }
+      .flash { animation: muzzleFlash 2.5s infinite; }
+      .bullet { animation: bulletFire 2.5s infinite; }
+      .slash { transform-origin: center; animation: slashArc 2s infinite; }
+      .snake-body { animation: snakeStep 4s infinite; }
+    </style>
+  </defs>
+
+  <!-- Card 1: Deathmatch FFA -->
+  <g transform="translate(10, 10)">
+    <rect class="card-bg" width="185" height="250" />
+    <rect x="10" y="10" width="165" height="28" rx="4" fill="#161B22" />
+    <text x="20" y="29" class="header-title">DEATHMATCH</text>
+    <circle cx="160" cy="24" r="4" fill="#238636" />
+
+    <!-- Arena Stage Simulator -->
+    <rect x="10" y="46" width="165" height="85" rx="4" fill="#090D12" stroke="#21262D" />
+    <!-- Crosshair Target -->
+    <circle cx="92" cy="88" r="14" fill="none" stroke="#58A6FF" stroke-width="1.2" stroke-dasharray="3,3" />
+    <line x1="92" y1="70" x2="92" y2="106" stroke="#58A6FF" stroke-width="1" />
+    <line x1="74" y1="88" x2="110" y2="88" stroke="#58A6FF" stroke-width="1" />
+    <!-- Bullet Tracer -->
+    <line x1="65" y1="88" x2="85" y2="88" stroke="#FFA657" stroke-width="2" class="bullet" />
+    <!-- Hit Notification -->
+    <text x="98" y="78" font-family="'Fira Code', monospace" font-size="10" fill="#FF7B72" font-weight="bold" class="flash">-45 HP</text>
+
+    <!-- Stats & Live Combat Data -->
+    <text x="12" y="150" class="sub-title">Target: Enemy Player</text>
+    <rect x="12" y="158" width="161" height="6" class="hp-bg" />
+    <rect x="12" y="158" width="130" height="6" class="hp-fill" />
+
+    <text x="12" y="182" class="mono-text">WEAPON : M4 CARBINE</text>
+    <text x="12" y="200" class="mono-text">DAMAGE : 45 HP / HIT</text>
+    <text x="12" y="218" class="mono-text">STATUS : AUTO ENGAGE</text>
+    <text x="12" y="236" font-family="'Fira Code', monospace" font-size="10" fill="#3FB950">[LIVE COMBAT ACTIVE]</text>
+  </g>
+
+  <!-- Card 2: Gun Duel / Perang Pistol -->
+  <g transform="translate(205, 10)">
+    <rect class="card-bg" width="185" height="250" />
+    <rect x="10" y="10" width="165" height="28" rx="4" fill="#161B22" />
+    <text x="20" y="29" class="header-title">GUN DUEL (PISTOL)</text>
+    <circle cx="160" cy="24" r="4" fill="#58A6FF" />
+
+    <!-- Pistol Range Simulator -->
+    <rect x="10" y="46" width="165" height="85" rx="4" fill="#090D12" stroke="#21262D" />
+    <!-- Pistol Graphic Silhouette -->
+    <path d="M 40 92 L 75 92 L 75 97 L 68 112 L 56 112 L 60 97 L 40 97 Z" fill="#8B949E" />
+    <rect x="35" y="88" width="42" height="7" rx="2" fill="#C9D1D9" />
+    <!-- Muzzle Spark -->
+    <polygon points="78,91 92,85 88,91 95,96 80,94" fill="#FFA657" class="flash" />
+    <!-- Laser Beam -->
+    <line x1="80" y1="91" x2="150" y2="91" stroke="#FF7B72" stroke-width="1" stroke-opacity="0.7" />
+
+    <text x="12" y="150" class="sub-title">Caliber: .50 Action Express</text>
+    <text x="12" y="172" class="mono-text">PISTOL : DESERT EAGLE</text>
+    <text x="12" y="190" class="mono-text">AMMO   : 7 / 7 AUTO-FIRE</text>
+    <text x="12" y="208" class="mono-text">ACCURACY : 98.4% SHOT</text>
+    <text x="12" y="226" class="mono-text">CRIT   : HEADSHOT (1-HIT)</text>
+    <text x="12" y="242" font-family="'Fira Code', monospace" font-size="10" fill="#58A6FF">[FIRING SIMULATION ON]</text>
+  </g>
+
+  <!-- Card 3: Knife Combat / Duel Pisau -->
+  <g transform="translate(400, 10)">
+    <rect class="card-bg" width="185" height="250" />
+    <rect x="10" y="10" width="165" height="28" rx="4" fill="#161B22" />
+    <text x="20" y="29" class="header-title">KNIFE COMBAT</text>
+    <circle cx="160" cy="24" r="4" fill="#D2A8FF" />
+
+    <!-- Knife Arena Simulator -->
+    <rect x="10" y="46" width="165" height="85" rx="4" fill="#090D12" stroke="#21262D" />
+    <!-- Slashing Arc -->
+    <g transform="translate(92, 88)" class="slash">
+      <path d="M -30 -20 Q 0 15 35 5" fill="none" stroke="#A5D6FF" stroke-width="2.5" stroke-linecap="round" />
+      <polygon points="18,0 36,4 28,-12" fill="#F0883E" />
+    </g>
+    <!-- Slash Sparks -->
+    <circle cx="120" cy="80" r="2" fill="#FFA657" class="flash" />
+    <circle cx="130" cy="95" r="2.5" fill="#FF7B72" class="flash" />
+
+    <text x="12" y="150" class="sub-title">Mode: Close-Quarters Melee</text>
+    <text x="12" y="172" class="mono-text">WEAPON : COMBAT BLADE</text>
+    <text x="12" y="190" class="mono-text">ACTION : INSTANT SLASH</text>
+    <text x="12" y="208" class="mono-text">AGILITY: TACTICAL SPRINT</text>
+    <text x="12" y="226" class="mono-text">EFFECT : BLEED + CRIT</text>
+    <text x="12" y="242" font-family="'Fira Code', monospace" font-size="10" fill="#D2A8FF">[MELEE LOOP RUNNING]</text>
+  </g>
+
+  <!-- Card 4: Snake Runner -->
+  <g transform="translate(595, 10)">
+    <rect class="card-bg" width="195" height="250" />
+    <rect x="10" y="10" width="175" height="28" rx="4" fill="#161B22" />
+    <text x="20" y="29" class="header-title">SNAKE RUNNER</text>
+    <circle cx="170" cy="24" r="4" fill="#3FB950" />
+
+    <!-- Snake Grid Simulator -->
+    <rect x="10" y="46" width="175" height="85" rx="4" fill="#090D12" stroke="#21262D" />
+    <!-- Grid Matrix -->
+    <g stroke="#161B22" stroke-width="1">
+      <line x1="10" y1="65" x2="185" y2="65" />
+      <line x1="10" y1="85" x2="185" y2="85" />
+      <line x1="10" y1="105" x2="185" y2="105" />
+      <line x1="50" y1="46" x2="50" y2="131" />
+      <line x1="90" y1="46" x2="90" y2="131" />
+      <line x1="130" y1="46" x2="130" y2="131" />
+      <line x1="170" y1="46" x2="170" y2="131" />
+    </g>
+    <!-- Moving Snake -->
+    <g class="snake-body">
+      <rect x="35" y="72" width="12" height="12" rx="2" fill="#3FB950" />
+      <rect x="50" y="72" width="12" height="12" rx="2" fill="#2EA043" />
+      <rect x="65" y="72" width="12" height="12" rx="2" fill="#238636" />
+      <rect x="80" y="72" width="12" height="12" rx="3" fill="#58A6FF" />
+    </g>
+    <!-- Food Apple -->
+    <circle cx="145" cy="90" r="5" fill="#FF7B72" />
+
+    <text x="12" y="150" class="sub-title">Mode: Contribution Grid Eater</text>
+    <text x="12" y="172" class="mono-text">ENGINE : PLATANE / SNK</text>
+    <text x="12" y="190" class="mono-text">STATUS : AUTO ACTIVE</text>
+    <text x="12" y="208" class="mono-text">EATING : GREEN PIXELS</text>
+    <text x="12" y="226" class="mono-text">UPDATED: EVERY 12H</text>
+    <text x="12" y="242" font-family="'Fira Code', monospace" font-size="10" fill="#3FB950">[AUTO-PLAYING SIMULATOR]</text>
+  </g>
+</svg>
