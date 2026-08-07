@@ -94,9 +94,9 @@ Yuk join community biar kita bisa saling share & belajar bareng!
 
 | Proyek | Deskripsi | Tech |
 |--------|-----------|------|
-| **[Nama Project 1](https://github.com/Denisyoya/repo1)** | Deskripsi singkat project ini | Python, Node.js |
-| **[Nama Project 2](https://github.com/Denisyoya/repo2)** | Deskripsi singkat project ini | React, HTML, CSS |
-| **[Nama Project 3](https://github.com/Denisyoya/repo3)** | Script SA-MP / gamemode | Pawno |
+| **[Unknown](https://github.com/Denisyoya/repo1)** | Deskripsi singkat project ini | Unknown |
+| **[Unknown](https://github.com/Denisyoya/repo2)** | Deskripsi singkat project ini | Unknown |
+| **[Unknown](https://github.com/Denisyoya/repo3)** | Script SA-MP / gamemode | Unknown |
 
 ---
 
